@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Image recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script> 
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+      </head>
+      <body>
+          <center>
+              <h1>Face Recognition Web App</h2>
+              <h2>Model is trained to identify the following things:</h2>
+              <h2>Mother</h2>
+              <h2>GrandMother</h2>
+              <h2>Myself</h2>
+              <h2>Pet Cat</h2>
+              <h2>GrandFather</h2>
+              <h3>Webcam View-</h3>
+              <div id="camera"></div>
+              <br>
+              <br>
+              <div id="result"></div>
+              <button class="btn btn-success" onclick="take_snapshot()">Capture Image</button>
+              <br>
+              <br>
+              <button class="btn btn-primary" onclick="check()">Identify Image</button>
+              <h3>Object: <span id="object_result"></span></h3>
+              <h3>Accuracy: <span id="object_accuracy_result"></span></h3>
+          </center>
+      </body>
+</html>
